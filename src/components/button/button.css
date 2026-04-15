@@ -1,0 +1,14 @@
+.botao-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background-color: var(--laranja-destaque);
+    border-radius: 8px;
+    border: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}

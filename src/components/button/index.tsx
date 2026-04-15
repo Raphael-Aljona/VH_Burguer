@@ -1,8 +1,16 @@
+import { ReactNode } from "react";
 
-const Button = () => {
+type ButtonProps = {
+    children: ReactNode;
+    type?: "button" | "submit" | "reset";
+};
+
+const Button = ({ children, type = "button" }: ButtonProps) => {
     return (
-        <button type="submit"></button>
-    )
-}
+        <button className="botao-principal" type={type}>
+            {children}
+        </button>
+    );
+};
 
-export default Button
+export default Button;
