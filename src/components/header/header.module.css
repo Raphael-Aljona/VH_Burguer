@@ -1,0 +1,58 @@
+#header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--fundo-claro);
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container #logo {
+    width: 200px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.subtitulo {
+    text-decoration: none;
+    color: var(--vinho);
+    font-weight: 600;
+
+    font-size: 17px;
+}
+
+.subtitulo:hover {
+    color: var(--laranja-destaque);
+    transition: 300ms ease;
+}
+
+.burguer_btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: relative;
+    }
+
+    .burguer_btn {
+        display: block;
+
+        border: none;
+        height: 40px;
+    }
+
+    .burguer_btn img{
+        width: 40px;
+    }
+}

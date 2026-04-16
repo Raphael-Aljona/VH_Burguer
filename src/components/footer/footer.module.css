@@ -1,0 +1,36 @@
+#footer{
+    width: 100%;
+    background-color: var(--vinho);
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteudo{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--laranja-destaque);
+}
+
+.redes_sociais{
+    display: flex;
+    gap: 25px;
+}
+
+#direito_autoral{
+    color: var(--laranja-destaque);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}

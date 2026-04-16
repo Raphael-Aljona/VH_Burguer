@@ -1,7 +1,11 @@
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
+
 const Home = () => {
     return (
         <>
-            <p>a</p>
+            <Header></Header>
+            <Footer></Footer>
         </>
     )
 }

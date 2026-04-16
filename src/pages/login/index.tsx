@@ -1,6 +1,6 @@
 // ESTRUTURA PADRÃO
 
-import Button from "@/components/button";
+import Button from "@/components/button/btn";
 import styles from "./login.module.css";
 
 const Login = () => {
