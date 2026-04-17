@@ -20,7 +20,7 @@
 
 .container h1{
     color: var(--laranja-destaque);
-    font-size: 100px;
+    font-size: var(--tamanho-h1);
     font-weight: 500;
 }
 
@@ -37,3 +37,65 @@
 
 /*SECTION DESTAQUES*/
 
+#destaques{
+    height: 90vh;
+
+    background-color: var(--fundo-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaques .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+}
+
+#destaques .destaques_esquerda{
+    height: 80%;
+}
+
+#destaques .card_destaques {
+    background-image: url("/imgs/mais_pedidos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 10px;
+}
+
+#destaques .card_superior{
+    background-image: url("/imgs/muito_bacon.png");
+
+    align-items: end;
+}
+
+#destaques .card_inferior{
+    background-image: url("/imgs/super_combos.png");
+
+    align-items: end;
+}
+
+#destaques h2{
+    color: var(--fundo-claro);
+    font-size: var(--tamanho-titulo);
+    font-weight: 400;
+}
+
+#destaques p{
+    color: var(--fundo-claro);
+    font-size: var(--tamanho-subtitulo);
+}
+
+#destaques .destaques_direita{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 80%;
+    grid-row-gap: 20px;
+}

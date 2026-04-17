@@ -20,7 +20,25 @@ const Home = () => {
                     </div>
                 </section>
                 <section id={styles.destaques}>
-
+                    <div className={`layout_guide ${styles.container}`}>
+                        <div className={styles.destaques_esquerda}>
+                            <div className={styles.card_destaques}>
+                                {/*<img src="/imgs/mais%20pedidos.png" alt=""/>*/}
+                                <h2>MAIS PEDIDOS</h2>
+                                <p>Os queridinhos da galera</p>
+                            </div>
+                        </div>
+                        <div className={styles.destaques_direita}>
+                            <div className={`${styles.card_destaques} ${styles.card_superior}`}>
+                                <h2>MUITO BACON</h2>
+                                <p>Lanches com</p>
+                            </div>
+                            <div className={`${styles.card_destaques} ${styles.card_inferior}`}>
+                                <h2>SUPER COMBOS</h2>
+                                <p>Se tiver muita fome</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section id={styles.cardapio}></section>
                 <section id={styles.unidades}></section>
