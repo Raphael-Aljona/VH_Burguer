@@ -6,7 +6,7 @@ const Footer = () => {
             <footer id={styles.footer}>
                 <div className={`layout_guide ${styles.container}`}>
                     <div className={styles.conteudo}>
-                        <img src="/imgs/Logo_footer.svg" alt=""/>
+                        <img className={styles.logo_footer} src="/imgs/Logo_footer.svg" alt=""/>
                         <div className={styles.redes_sociais}>
                             <a href=""><img src="/imgs/tiktok.png" alt=""/></a>
                             <a href=""><img src="/imgs/face.png" alt=""/></a>

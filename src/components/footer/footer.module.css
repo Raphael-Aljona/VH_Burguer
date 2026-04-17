@@ -3,7 +3,6 @@
     background-color: var(--vinho);
     display: flex;
     justify-content: center;
-
 }
 
 .container{
@@ -21,6 +20,10 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: solid 1px var(--laranja-destaque);
+}
+
+.conteudo .logo_footer{
+    width: 200px;
 }
 
 .redes_sociais{

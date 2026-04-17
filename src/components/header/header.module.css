@@ -39,6 +39,10 @@
     display: none;
 }
 
+.burguer_btn_active {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     .nav {
         display: none;
