@@ -1,0 +1,53 @@
+.card{
+    height: 45vh;
+    width: 15vw;
+
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_texto h3{
+    background-color: var(--vinho);
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco{
+    text-align: center;
+    color: var(--laranja-destaque);
+    background-color: var(--vinho);
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.texto_card{
+    text-align: center;
+}
+
+.bgi{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}

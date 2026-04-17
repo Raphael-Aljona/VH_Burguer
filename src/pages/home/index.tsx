@@ -1,6 +1,7 @@
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Button from "@/components/button/btn";
+import CardProduto from "@/components/card-produto/card_produto";
 
 import styles from "./home.module.css"
 
@@ -40,6 +41,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                <CardProduto></CardProduto>
                 <section id={styles.cardapio}></section>
                 <section id={styles.unidades}></section>
             </main>
