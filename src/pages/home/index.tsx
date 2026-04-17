@@ -1,7 +1,7 @@
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Button from "@/components/button/btn";
-import CardProduto from "@/components/card-produto/card_produto";
+import ListaProduto from "@/components/lista-produto/lista_produto"
 
 import styles from "./home.module.css"
 
@@ -41,9 +41,22 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <CardProduto></CardProduto>
-                <section id={styles.cardapio}></section>
-                <section id={styles.unidades}></section>
+                <section id={styles.cardapio}>
+                    <div className={`layout_guide ${styles.container}`}>
+                        <h2>CARDÁPIO</h2>
+                        <div className={styles.filtrar}>
+                            <label htmlFor="Filtrar">Filtrar</label>
+                            <select name="Filtrar" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <ListaProduto></ListaProduto>
+                    </div>
+                </section>
+                <section id={styles.unidades}>
+                </section>
             </main>
             <Footer></Footer>
         </>

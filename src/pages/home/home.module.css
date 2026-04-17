@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.container{
+#banner .container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,17 +18,17 @@
     height: 100%;
 }
 
-.container h1{
+#banner.container h1{
     color: var(--laranja-destaque);
     font-size: var(--tamanho-h1);
     font-weight: 500;
 }
 
-.container img{
+#banner.container img{
     width: 1100px;
 }
 
-.buttons_banner{
+#banner .buttons_banner{
     width: 70%;
 
     display: flex;
@@ -49,7 +49,10 @@
 #destaques .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
     height: 90%;
+
+    align-items: center;
 }
 
 #destaques .destaques_esquerda{
@@ -98,4 +101,50 @@
     grid-template-rows: 1fr 1fr;
     height: 80%;
     grid-row-gap: 20px;
+}
+
+/*SECTION CARDÁPIO*/
+#cardapio {
+    height: 150vh;
+    background-color: var(--fundo-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cardapio .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+#cardapio h2 {
+    color: var(--laranja-destaque);
+    font-size: 80px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+#cardapio .filtrar{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    background-color: var(--laranja-destaque);
+
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#cardapio .filtrar label{
+    font-size: 20px;
+}
+
+#cardapio .filtrar select{ 
+    border: none;
+    background-color: var(--laranja-destaque);
 }

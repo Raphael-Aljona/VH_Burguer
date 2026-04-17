@@ -1,6 +1,6 @@
 .card{
-    height: 45vh;
-    width: 15vw;
+    height: 50vh;
+    width: 20vw;
 
     display: flex;
     border-radius: 20px;
@@ -26,6 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 30px;
 }
 
 .preco{
@@ -40,6 +42,7 @@
     align-items: center;
 
     font-size: 25px;
+    border-radius: 0 0 20px 20px;
 }
 
 .texto_card{
