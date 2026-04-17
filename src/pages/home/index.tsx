@@ -56,6 +56,15 @@ const Home = () => {
                     </div>
                 </section>
                 <section id={styles.unidades}>
+                    <div className={`layout_guide ${styles.container}`}>
+                        <h2>NOSSAS UNIDADES</h2>
+                        <ul>
+                            <li>Centro - Av. Aurora, 742</li>
+                            <li>Jardim - Av. das Palmeiras, 1280</li>
+                            <li>Norte - Av. Horizonte, 305</li>
+                            <li>Sul - Av. Nova Esperança, 910</li>
+                        </ul>
+                    </div>
                 </section>
             </main>
             <Footer></Footer>
