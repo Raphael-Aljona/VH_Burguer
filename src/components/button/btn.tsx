@@ -1,13 +1,14 @@
-import { ReactNode } from "react";
+import {ReactNode} from "react";
 
 type ButtonProps = {
     children: ReactNode;
     type?: "button" | "submit" | "reset";
+    variant?: "botao-principal" | "botao-secundario";
 };
 
-const Button = ({ children, type = "button" }: ButtonProps) => {
+const Button = ({children, type = "button", variant = "botao-principal"}: ButtonProps) => {
     return (
-        <button className="botao-principal" type={type}>
+        <button className={`botao ${variant}`} type={type}>
             {children}
         </button>
     );

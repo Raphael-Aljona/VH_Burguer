@@ -1,10 +1,9 @@
-.botao-principal{
+.botao{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 52px;
     width: 100%;
-    background-color: var(--laranja-destaque);
     border-radius: 8px;
     border: none;
     color: black;
@@ -12,3 +11,16 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+.botao-secundario{
+    background-color: var(--vinho);
+    color: var(--fundo-claro);
+}
+
+.botao-principal{
+    background-color: var(--laranja-destaque);
+    color: var(--fundo-escuro);
+}
+
+
+
