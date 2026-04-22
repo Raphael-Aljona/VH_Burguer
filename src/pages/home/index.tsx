@@ -44,14 +44,6 @@ const Home = () => {
                 <section id={styles.cardapio}>
                     <div className={`layout_guide ${styles.container}`}>
                         <h2>CARDÁPIO</h2>
-                        <div className={styles.filtrar}>
-                            <label htmlFor="Filtrar">Filtrar</label>
-                            <select name="Filtrar" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                        </div>
                         <ListaProduto></ListaProduto>
                     </div>
                 </section>

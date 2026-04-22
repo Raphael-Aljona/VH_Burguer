@@ -38,11 +38,16 @@
     height: 50px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     font-size: 25px;
     border-radius: 0 0 20px 20px;
+}
+
+.icones{
+    display: flex;
+    gap: 10px;
 }
 
 .texto_card{

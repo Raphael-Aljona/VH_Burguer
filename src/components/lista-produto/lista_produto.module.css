@@ -4,3 +4,44 @@
     justify-items: center;
     margin-bottom: 50px;
 }
+
+.botoes_topo{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.botoes_direita{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 30%;
+}
+
+.botao_esquerda{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtrar{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    background-color: var(--laranja-destaque);
+
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.filtrar label{
+    font-size: 20px;
+}
+
+.filtrar select{
+    border: none;
+    background-color: var(--laranja-destaque);
+}

@@ -1,6 +1,6 @@
 .botao{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 52px;
     width: 100%;

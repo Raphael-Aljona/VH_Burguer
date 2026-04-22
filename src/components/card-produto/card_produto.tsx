@@ -1,7 +1,11 @@
 import styles from "./card_produto.module.css"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
+import {faEdit} from "@fortawesome/free-solid-svg-icons/faEdit";
+import {faTrash} from "@fortawesome/free-solid-svg-icons/faTrash";
 
-const card_produto = ()=>{
-    return(
+const card_produto = () => {
+    return (
         <>
             <article className={styles.card}>
                 <div className={styles.img_texto}>
@@ -9,8 +13,15 @@ const card_produto = ()=>{
                     <h3>Monster</h3>
                 </div>
 
-                <p className={styles.texto_card} >Hambúrguer brutal, suculento e exageradamente saboraso.</p>
-                <p className={styles.preco}>R$ 35,00</p>
+                <p className={styles.texto_card}>Hambúrguer brutal, suculento e exageradamente saboroso.</p>
+                <div className={styles.preco}>
+                    <p className={styles.a}>R$ 35,00</p>
+                    <div className={styles.icones}>
+                        <FontAwesomeIcon icon={faCircleInfo}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faEdit}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
+                    </div>
+                </div>
             </article>
         </>
     );
