@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    width: 100%;
+    height: 10vh    ;
+    background-color: var(--vinho);
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 50%;
+}
+
+.voltar{
+    color: var(--laranja-destaque);
+    text-decoration: none;
+
+    font-size: 1.5rem;
+}
+
+

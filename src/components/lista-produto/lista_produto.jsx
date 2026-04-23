@@ -21,8 +21,6 @@ const ListaProduto = () => {
                 <CardProduto></CardProduto>
                 <CardProduto></CardProduto>
                 <CardProduto></CardProduto>
-            </div>
-            <div className={styles.lista_produtos}>
                 <CardProduto></CardProduto>
                 <CardProduto></CardProduto>
                 <CardProduto></CardProduto>

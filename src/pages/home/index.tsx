@@ -9,8 +9,8 @@ const Home = () => {
     return (
         <>
             <Header></Header>
-            <main>
-                <section id={styles.banner}>
+            <main id={styles.main}>
+                <section className={styles.banner} id="banner">
                     <div className={`layout_guide ${styles.container}`}>
                         <h1>BEM-VINDO AO VH BURGUER</h1>
                         <img src="/imgs/foto_de_hamburgueres.png" alt=""/>
@@ -20,7 +20,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section id={styles.destaques}>
+                <section className={styles.destaques} id="destaques">
                     <div className={`layout_guide ${styles.container}`}>
                         <div className={styles.destaques_esquerda}>
                             <div className={styles.card_destaques}>
@@ -41,13 +41,13 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section id={styles.cardapio}>
+                <section className={styles.cardapio} id="cardapio">
                     <div className={`layout_guide ${styles.container}`}>
                         <h2>CARDÁPIO</h2>
                         <ListaProduto></ListaProduto>
                     </div>
                 </section>
-                <section id={styles.unidades}>
+                <section className={styles.unidades} id="unidades">
                     <div className={`layout_guide ${styles.container}`}>
                         <h2>NOSSAS UNIDADES</h2>
                         <ul>

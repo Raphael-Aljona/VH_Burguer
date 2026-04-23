@@ -1,6 +1,6 @@
 /*SECTION BANNER*/
 
-#banner{
+.banner{
     height: 90vh;
 
     display: flex;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-#banner .container{
+.banner .container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,17 +18,17 @@
     height: 100%;
 }
 
-#banner .container h1{
+.banner .container h1{
     color: var(--laranja-destaque);
     font-size: var(--tamanho-h1);
     font-weight: 500;
 }
 
-#banner.container img{
-    width: 1100px;
+.banner .container img{
+    width: 80%;
 }
 
-#banner .buttons_banner{
+.banner .buttons_banner{
     width: 70%;
 
     display: flex;
@@ -37,7 +37,7 @@
 
 /*SECTION DESTAQUES*/
 
-#destaques{
+.destaques{
     height: 90vh;
 
     background-color: var(--fundo-escuro);
@@ -46,7 +46,7 @@
     align-items: center;
 }
 
-#destaques .container{
+.destaques .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
@@ -55,11 +55,11 @@
     align-items: center;
 }
 
-#destaques .destaques_esquerda{
+.destaques .destaques_esquerda{
     height: 80%;
 }
 
-#destaques .card_destaques {
+.destaques .card_destaques {
     background-image: url("/imgs/mais_pedidos.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,30 +73,30 @@
     padding: 10px;
 }
 
-#destaques .card_superior{
+.destaques .card_superior{
     background-image: url("/imgs/muito_bacon.png");
 
     align-items: end;
 }
 
-#destaques .card_inferior{
+.destaques .card_inferior{
     background-image: url("/imgs/super_combos.png");
 
     align-items: end;
 }
 
-#destaques h2{
+.destaques h2{
     color: var(--fundo-claro);
     font-size: var(--tamanho-titulo);
     font-weight: 400;
 }
 
-#destaques p{
+.destaques p{
     color: var(--fundo-claro);
     font-size: var(--tamanho-subtitulo);
 }
 
-#destaques .destaques_direita{
+.destaques .destaques_direita{
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 80%;
@@ -104,7 +104,7 @@
 }
 
 /*SECTION CARDÁPIO*/
-#cardapio {
+.cardapio {
     height: 150vh;
     background-color: var(--fundo-claro);
     display: flex;
@@ -112,14 +112,14 @@
     align-items: center;
 }
 
-#cardapio .container{
+.cardapio .container{
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: center;
 }
 
-#cardapio h2 {
+.cardapio h2 {
     color: var(--laranja-destaque);
     font-size: 80px;
     font-weight: 500;
@@ -129,7 +129,7 @@
 
 /*SECTION UNIDADES*/
 
-#unidades {
+.unidades {
     height: 50vh;
 
     background-image: url("/imgs/unidade.jpeg");
@@ -143,7 +143,7 @@
     background-blend-mode: multiply;
 }
 
-#unidades .container{
+.unidades .container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -152,14 +152,20 @@
     height: 30vh;
 }
 
-#unidades .container h2{
+.unidades .container h2{
     color: var(--fundo-claro);
 
     font-size: var(--tamanho-titulo);
 }
 
-#unidades .container li{
+.unidades .container li{
     color: var(--fundo-claro);
 
     font-size: var(--tamanho-subtitulo);
 }
+
+/*@media screen and (max-width: 1024px) {*/
+/*    .cardapio {*/
+/*        height: 200vh;*/
+/*    }*/
+/*}*/
