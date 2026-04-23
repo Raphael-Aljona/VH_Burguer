@@ -1,0 +1,69 @@
+#formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--fundo-claro);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 80%;
+    width: 60%;
+}
+
+.container h1 {
+    color: var(--laranja-destaque);
+
+    font-size: var(--tamanho-titulo);
+    font-weight: 500;
+    text-align: center;
+}
+
+.container a {
+    text-align: end;
+}
+
+.informacoes_campo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.informacoes_campo label {
+    font-weight: 500;
+
+    font-size: 1.2rem;
+}
+
+.informacoes_campo input,
+.informacoes_campo textarea,
+.informacoes_campo select {
+    border: none;
+    background-color: #fff;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.informacoes_campo .descricao {
+    height: 10vh;
+}
+
+.informacoes_campo input:focus,
+.informacoes_campo textarea:focus,
+.informacoes_campo select   :focus{
+    outline: 2px solid var(--laranja-destaque);
+}
+
+.botoes {
+    display: flex;
+    gap: 50px;
+}
