@@ -1,0 +1,10 @@
+.card_historico{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    background-color: #fff;
+
+    padding: 20px;
+    border-radius: 20px;
+}
