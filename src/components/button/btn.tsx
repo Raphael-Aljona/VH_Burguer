@@ -5,11 +5,12 @@ type ButtonProps = {
     type?: "button" | "submit" | "reset";
     variant?: "botao-principal" | "botao-secundario" | "botao-outline-claro" | "botao-outline-escuro";
     id?: string;
+    onclick?: () => void;
 };
 
-const Button = ({children, type = "button", variant = "botao-principal"}: ButtonProps) => {
+const Button = ({children, type = "button", variant = "botao-principal", onclick}: ButtonProps) => {
     return (
-        <button className={`botao ${variant}`} type={type}>
+        <button onClick={onclick} className={`botao ${variant}`} type={type}>
             {children}
         </button>
     );

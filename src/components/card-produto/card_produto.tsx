@@ -3,11 +3,16 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
 import {faEdit} from "@fortawesome/free-solid-svg-icons/faEdit";
 import {faTrash} from "@fortawesome/free-solid-svg-icons/faTrash";
+import {router} from "next/client";
+
+const redirect = () => {
+    router.push("/detalhe-produto");
+}
 
 const card_produto = () => {
     return (
         <>
-            <article className={styles.card}>
+            <article onClick={redirect} className={styles.card}>
                 <div className={styles.img_texto}>
                     <img className={styles.bgi} src="/imgs/HamburguerAlcatraComBacon_1-scaled.png" alt=""/>
                     <h3>Monster</h3>
@@ -23,6 +28,7 @@ const card_produto = () => {
                     </div>
                 </div>
             </article>
+
         </>
     );
 }

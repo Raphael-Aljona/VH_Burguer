@@ -3,7 +3,11 @@ import CardProduto from "@/components/card-produto/card_produto";
 import Button from "@/components/button/btn";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSliders} from "@fortawesome/free-solid-svg-icons/faSliders";
+import {router} from "next/client";
 
+const redirect = () => {
+    router.push("/produto");
+}
 
 const ListaProduto = () => {
     return (
@@ -14,7 +18,7 @@ const ListaProduto = () => {
                 </div>
                 <div className={styles.botoes_direita}>
                     <Button>Todas as promoções</Button>
-                    <Button>Adicionar produto</Button>
+                    <Button onclick={redirect} >Adicionar produto</Button>
                 </div>
             </div>
             <div className={styles.lista_produtos}>

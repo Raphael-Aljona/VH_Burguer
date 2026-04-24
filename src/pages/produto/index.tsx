@@ -33,7 +33,7 @@ const Produto = () => {
                                 <option value="opcao1">Texto1</option>
                             </select>
                         </div>
-                        <a href="">Adicionar Categoria</a>
+                        <a href="/categoria">Adicionar Categoria</a>
                         <div className={styles.informacoes_campo}>
                             <label htmlFor="imagem">URL da imagem</label>
                             <input id="imagem" className={styles.imagem} type="text" placeholder="https://unsplash.com/pt-br/fotografias/cheseburger-de-"/>
