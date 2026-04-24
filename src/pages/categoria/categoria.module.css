@@ -1,29 +1,24 @@
-.adicionar_promocao{
-    height: 70%;
-    width: 50%;
-    background-color: var(--vinho);
-    padding: 50px;
-
+.secao_categoria{
+    height: 70vh;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-
-    border: none;
-    border-radius: 20px;
-
-    position: absolute;
-    top: 50%;
-    left: 25%;
-
-    /* remover isso em prod*/
-    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.adicionar_promocao h2{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
+}
+
+.container h1{
+    font-size: var(--tamanho-titulo);
+
     color: var(--laranja-destaque);
     font-weight: 500;
     text-align: center;
-    font-size: 50px;
 }
 
 .informacoes_campo {
@@ -37,12 +32,9 @@
     font-weight: 500;
 
     font-size: 1.2rem;
-    color: var(--fundo-claro);
 }
 
-.informacoes_campo input,
-.informacoes_campo textarea,
-.informacoes_campo select {
+.informacoes_campo input{
     border: none;
     background-color: #fff;
     padding: 20px;
@@ -55,9 +47,7 @@
     height: 10vh;
 }
 
-.informacoes_campo input:focus,
-.informacoes_campo textarea:focus,
-.informacoes_campo select   :focus{
+.informacoes_campo input:focus{
     outline: 2px solid var(--laranja-destaque);
 }
 

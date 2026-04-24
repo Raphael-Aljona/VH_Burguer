@@ -2,7 +2,6 @@ import styles from "./editar_produto.module.css"
 import SubHeader from "@/components/sub-header/sub-header";
 import Footer from "@/components/footer/footer";
 import Button from "@/components/button/btn";
-import Modal from "@/components/modal/modal";
 
 const Produto = () => {
 
@@ -43,7 +42,6 @@ const Produto = () => {
                             <Button type="button" variant="botao-secundario" id="btnOpen">Adicionar Promoção</Button>
                             <Button type="button" variant="botao-principal">Salvar</Button>
                         </div>
-                        <Modal></Modal>
                     </div>
                 </section>
             </main>

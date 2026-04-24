@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 type ButtonProps = {
     children: ReactNode;
     type?: "button" | "submit" | "reset";
-    variant?: "botao-principal" | "botao-secundario" | "botao-outline";
+    variant?: "botao-principal" | "botao-secundario" | "botao-outline-claro" | "botao-outline-escuro";
     id?: string;
 };
 

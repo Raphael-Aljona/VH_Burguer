@@ -22,9 +22,15 @@
     color: var(--fundo-escuro);
 }
 
-.botao-outline{
+.botao-outline-claro{
     background-color: transparent;
     color: var(--fundo-claro);
+    border: 2px solid var(--laranja-destaque);
+}
+
+.botao-outline-escuro{
+    background-color: transparent;
+    color: var(--fundo-escuro);
     border: 2px solid var(--laranja-destaque);
 }
 
