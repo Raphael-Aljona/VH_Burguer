@@ -22,5 +22,11 @@
     color: var(--fundo-escuro);
 }
 
+.botao-outline{
+    background-color: transparent;
+    color: var(--fundo-claro);
+    border: 2px solid var(--laranja-destaque);
+}
+
 
 

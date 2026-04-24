@@ -2,8 +2,10 @@ import styles from "./editar_produto.module.css"
 import SubHeader from "@/components/sub-header/sub-header";
 import Footer from "@/components/footer/footer";
 import Button from "@/components/button/btn";
+import Modal from "@/components/modal/modal";
 
 const Produto = () => {
+
     return (
         <>
             <SubHeader></SubHeader>
@@ -38,10 +40,10 @@ const Produto = () => {
                             <input id="imagem" className={styles.imagem} type="text" placeholder="https://unsplash.com/pt-br/fotografias/cheseburger-de-"/>
                         </div>
                         <div className={styles.botoes}>
-                            <Button type="button" variant="botao-secundario">Adicionar Promoção</Button>
+                            <Button type="button" variant="botao-secundario" id="btnOpen">Adicionar Promoção</Button>
                             <Button type="button" variant="botao-principal">Salvar</Button>
                         </div>
-
+                        <Modal></Modal>
                     </div>
                 </section>
             </main>

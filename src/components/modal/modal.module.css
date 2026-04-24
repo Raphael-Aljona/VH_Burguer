@@ -1,34 +1,29 @@
-#formulario {
+.adicionar_promocao{
+    height: 70%;
+    width: 50%;
+    background-color: var(--vinho);
+    padding: 50px;
+
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    width: 100vw;
-    height: 100vh;
-
-    background-color: var(--fundo-claro);
-}
-
-.container {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
 
-    height: 80%;
-    width: 60%;
+    border: none;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 25%;
+
+    /* remover isso em prod*/
+    display: none;
 }
 
-.container h1 {
+.adicionar_promocao h2{
     color: var(--laranja-destaque);
-
-    font-size: var(--tamanho-titulo);
     font-weight: 500;
     text-align: center;
-}
-
-.container a {
-    text-align: end;
-    color: var(--vinho);
-    font-weight: 500;
+    font-size: 50px;
 }
 
 .informacoes_campo {
@@ -42,6 +37,7 @@
     font-weight: 500;
 
     font-size: 1.2rem;
+    color: var(--fundo-claro);
 }
 
 .informacoes_campo input,
