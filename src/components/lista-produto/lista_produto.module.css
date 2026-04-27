@@ -54,3 +54,24 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media screen and (max-width: 600px){
+    .lista_produtos{
+        grid-template-columns: 1fr;
+    }
+
+    .botoes_topo{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .botoes_direita{
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .botao_esquerda{
+        width: 100%;
+    }
+}

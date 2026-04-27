@@ -164,8 +164,41 @@
     font-size: var(--tamanho-subtitulo);
 }
 
-/*@media screen and (max-width: 1024px) {*/
-/*    .cardapio {*/
-/*        height: 200vh;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 1024px) {
+    .cardapio {
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cardapio {
+        height: 300vh;
+    }
+
+    .destaques .container{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+    }
+
+    .banner .container h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .cardapio h2{
+        font-size: 40px;
+    }
+
+    .banner .buttons_banner{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .unidades .container h2{
+        font-size: 40px;
+    }
+
+    .unidades .container li{
+        font-size: 25px;
+    }
+}
