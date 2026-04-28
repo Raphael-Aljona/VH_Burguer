@@ -21,6 +21,13 @@
     text-align: center;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
 .informacoes_campo {
     display: flex;
     flex-direction: column;

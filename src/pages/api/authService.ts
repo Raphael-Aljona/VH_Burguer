@@ -1,15 +1,17 @@
-import { api } from "./api"
+import {api} from "./api"
+import secureLocalStorage from "react-secure-storage";
 
-export async function login(email: string, password: string) {
-    try{
+export async function login(email: string, senha: string) {
+    try {
         const response = await api.post("Autenticacao/login", {
             email,
-            password
+            senha
         })
 
-        console.log("Login realizado com sucesso");
-        console.log(response)
-    }catch (e) {
+        const token = response.data.token;
+
+        secureLocalStorage.setItem("token", token);
+    } catch (e) {
         throw new Error("Email ou senha incorretos")
     }
 }
