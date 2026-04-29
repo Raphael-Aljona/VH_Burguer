@@ -5,6 +5,6 @@ export async function cadastrarCategoria(nome: string) {
         await api.post("Categoria", {nome})
         console.log("Cadastrado com sucesso")
     }catch(err: any){
-        throw new Error("")
+        throw new Error(err.response.data)
     }
 }

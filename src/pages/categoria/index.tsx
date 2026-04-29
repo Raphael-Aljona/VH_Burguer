@@ -4,20 +4,29 @@ import styles from "./categoria.module.css"
 import Button from "@/components/button/btn";
 import {useState} from "react";
 import {cadastrarCategoria} from "@/pages/api/categoriaService";
+import {ToastContainer, toast} from "react-toastify"
 
 const Categoria = () => {
 
     const [categoria, setCategorias] = useState<string>("")
 
-    function cadastrar(e: React.FormEvent<HTMLFormElement>) {
+    const notificacao = (msg: string) => toast.success(msg)
+    const notificacaoErro = (msg: string) => toast.error(msg)
+
+    async function cadastrar(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        cadastrarCategoria(categoria);
+        try{
+            await cadastrarCategoria(categoria);
+            notificacao("Cadastrado com sucesso!");
+        } catch(e: any) {
+            notificacaoErro(e.message);
+        }
+
     }
-
-
 
     return (
         <>
+            <ToastContainer/>
             <SubHeader></SubHeader>
             <main>
                 <section className={styles.secao_categoria}>

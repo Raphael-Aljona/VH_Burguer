@@ -26,8 +26,11 @@ const Login = () => {
         e.preventDefault();
         try {
             const response = await login(email, password);
-            notificacao("Logado com sucesso!")
-            router.push("/home");
+            notificacao("Logado com sucesso!");
+
+            setTimeout(e => {
+                router.push("/home");
+            }, 2000)
         } catch (e: any) {
             alert(e.message);
             notificaoErro("O email ou senha está incorreto!")
