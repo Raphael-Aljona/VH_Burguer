@@ -9,11 +9,9 @@ import {useEffect, useState} from "react";
 import categoria from "@/pages/categoria";
 
 interface Categoria {
-    categoriaId: number;
+    categoriaID: number;
     nome: string;
 }
-
-
 
 const Produto = () => {
 
@@ -29,28 +27,30 @@ const Produto = () => {
         const lista = await listarCategoria();
 
         setCategorias(lista);
-        console.log(lista);
+        console.log(categorias);
+    }
+
+    const dados = {
+        nome,
+        descricao,
+        preco,
+        imagem,
+        categoriaIds: categoriaSelecionadas,
     }
 
     async function adcionarProduto(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        try{
-            const dados = {
-                nome,
-                descricao,
-                preco,
-                imagem,
-                categoriaIds: categoriaSelecionadas,
-            }
+        try {
             await addProduto(dados);
-        }catch(e:any){
+
+        } catch (e: any) {
             console.log(e.message);
         }
     }
 
     useEffect(() => {
         listarCategorias();
-    }, [])
+    }, []);
 
     return (
         <>
@@ -59,7 +59,7 @@ const Produto = () => {
                 <section id={styles.formulario}>
                     <div className={`layout_guide ${styles.container}`}>
                         <h1>CRIAR PRODUTO</h1>
-                        <form onSubmit={} action="">
+                        <form onSubmit={adcionarProduto} action="">
                             <div className={styles.informacoes_campo}>
                                 <label htmlFor="nome">Nome do Produto</label>
                                 <input id="nome" className={styles.nome} type="text" value={nome} onChange={
@@ -83,17 +83,24 @@ const Produto = () => {
                             <div className={styles.informacoes_campo}>
                                 <label htmlFor="categoria">Categoria</label>
                                 <select multiple id="categoria" className={styles.categoria}
-                                        onChange={(e) => setCategoriaSelecionadas(
-                                            Array.from(e.target.selectedOptions).map((option) => Number(option.value))
-                                        )}>
+                                        onChange={(e) => {
+                                            setCategoriaSelecionadas(
+                                                Array.from(e.target.selectedOptions).map((option) => Number(option.value)))
+
+                                            console.log(categoriaSelecionadas)
+                                            categorias.map((categoria) => (
+                                                console.log(`CategoriaID:${categoria.categoriaID}`)
+                                            ) )
+                                        }}>
                                     <option value="" disabled selected>Selecione a categoria</option>
                                     {categorias.map((categoria) => (
-                                        <option key={categoria.categoriaId}
-                                                value={categoria.categoriaId}>{categoria.nome}</option>
-                                    ))}
+                                        <option key={categoria.categoriaID}
+                                                value={categoria.categoriaID}>{categoria.nome}</option>
+
+                                    ) )}
                                 </select>
                             </div>
-                            <a href="/categoria">Adicionar Categoria</a>
+                            <a href="categoria">Adicionar Categoria</a>
                             <div className={styles.informacoes_campo}>
                                 <label htmlFor="imagem">URL da imagem</label>
                                 <input id="imagem" className={styles.imagem} type="file" onChange={event => {
@@ -104,8 +111,12 @@ const Produto = () => {
                                        placeholder="https://unsplash.com/pt-br/fotografias/cheseburger-de-"/>
                             </div>
                             <div className={styles.botoes}>
-                                <Button type="button" variant="botao-secundario" id="btnOpen">Adicionar Promoção</Button>
-                                <Button type="button" variant="botao-principal">Salvar</Button>
+                                <Button type="button" variant="botao-secundario">Adicionar Promoção</Button>
+                                <Button type="submit" variant="botao-principal" onclick={
+                                    () => {
+                                        console.log(dados)
+                                    }
+                                }>Salvar</Button>
                             </div>
                         </form>
                     </div>
