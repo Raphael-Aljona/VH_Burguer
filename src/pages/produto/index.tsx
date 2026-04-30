@@ -23,13 +23,6 @@ const Produto = () => {
     const [imagem, setImagem] = useState<File | null>(null);
     const [categoriaSelecionadas, setCategoriaSelecionadas] = useState<number[]>([]);
 
-    async function listarCategorias() {
-        const lista = await listarCategoria();
-
-        setCategorias(lista);
-        console.log(categorias);
-    }
-
     const dados = {
         nome,
         descricao,
@@ -38,11 +31,16 @@ const Produto = () => {
         categoriaIds: categoriaSelecionadas,
     }
 
+    async function listarCategorias() {
+        const lista = await listarCategoria();
+
+        setCategorias(lista);
+    }
+
     async function adcionarProduto(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         try {
             await addProduto(dados);
-
         } catch (e: any) {
             console.log(e.message);
         }
@@ -86,11 +84,6 @@ const Produto = () => {
                                         onChange={(e) => {
                                             setCategoriaSelecionadas(
                                                 Array.from(e.target.selectedOptions).map((option) => Number(option.value)))
-
-                                            console.log(categoriaSelecionadas)
-                                            categorias.map((categoria) => (
-                                                console.log(`CategoriaID:${categoria.categoriaID}`)
-                                            ) )
                                         }}>
                                     <option value="" disabled selected>Selecione a categoria</option>
                                     {categorias.map((categoria) => (

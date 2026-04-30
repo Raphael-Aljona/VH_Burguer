@@ -1,5 +1,4 @@
 import {api} from "@/pages/api/api";
-import {forEach} from "eslint-config-next";
 
 type Produto = {
     nome: string,
